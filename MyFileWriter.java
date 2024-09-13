@@ -15,20 +15,24 @@ public class MyFileWriter{
             e.printStackTrace();
         }
         printFileSize(".mariahsInfo.txt");
+        printTotalFileSize(".mariahsInfo.txt", ".gitignore", ".secretFolder");
+        
     }
 
     public static void printFileSize(String file)
     {
         System.out.println(file.length());
     }
+  
     private static void printTotalFileSize(String... fileNames) {
         long totalSize = 0;
         for (String fileName : fileNames) {
             File file = new File(fileName);
             if (file.exists()) {
-                totalSize += file.length();
+            totalSize += file.length();
             }
         }
         System.out.println("Total size of all files: " + totalSize + " bytes");
-    }    
+    }
+
 }
