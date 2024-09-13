@@ -23,7 +23,7 @@ public class MyFileWriter{
     {
         System.out.println(file.length());
     }
-    
+  
     private static void printTotalFileSize(String... fileNames) {
         long totalSize = 0;
         for (String fileName : fileNames) {
@@ -35,5 +35,4 @@ public class MyFileWriter{
         System.out.println("Total size of all files: " + totalSize + " bytes");
     }
 
-    
 }
