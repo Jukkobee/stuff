@@ -32,5 +32,4 @@ public class MyFileWriter{
         }
         System.out.println("Total size of all files: " + totalSize + " bytes");
     }
-    
 }
