@@ -15,6 +15,8 @@ public class MyFileWriter{
             e.printStackTrace();
         }
         printFileSize(".mariahsInfo.txt");
+        printTotalFileSize(".mariahsInfo.txt", ".gitignore", ".secretFolder");
+        
     }
 
     public static void printFileSize(String file)
@@ -22,7 +24,7 @@ public class MyFileWriter{
         System.out.println(file.length());
     }
     
-    public static void printTotalFileSize(String... fileNames) {
+    private static void printTotalFileSize(String... fileNames) {
         long totalSize = 0;
         for (String fileName : fileNames) {
             File file = new File(fileName);
