@@ -15,6 +15,7 @@ public class MyFileWriter{
             e.printStackTrace();
         }
         printFileSize(".mariahsInfo.txt");
+        printTotalFileSize(".mariahsInfo.txt", ".secretFolder", ".gitignore");
     }
 
     public static void printFileSize(String file)
